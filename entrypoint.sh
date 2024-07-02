@@ -19,7 +19,7 @@ MESSAGE="${INPUT_MESSAGE:-Release ${TAG}}"
 
 # Set up Git.
 git config user.name "${GITHUB_ACTOR}"
-git config user.email "${GITHUB_ACTOR}@users.noreply.${GHE_REPO}.com"
+git config user.email "${GITHUB_ACTOR}@users.noreply.${GHE_REPO}"
 
 # Update MAJOR/MINOR tag
 git tag -fa "${MAJOR}" -m "${MESSAGE}"
