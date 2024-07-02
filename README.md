@@ -46,9 +46,10 @@ jobs:
   update-semver:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: haya14busa/action-update-semver@v1
+      - uses: actions/checkout@v4
+      - uses: weom/action-update-semver@v1.0.3
         with:
+          ghe_repo: <ghe url>
           major_version_tag_only: true  # (optional, default is "false")
 ```
 
