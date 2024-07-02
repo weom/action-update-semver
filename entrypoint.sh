@@ -18,7 +18,7 @@ MESSAGE="${INPUT_MESSAGE:-Release ${TAG}}"
 
 # Set up Git.
 git config user.name "${GITHUB_ACTOR}"
-git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+git config user.email "${GITHUB_ACTOR}@users.noreply.${GITHUB_SERVER_URL}.com"
 
 # Update MAJOR/MINOR tag
 git tag -fa "${MAJOR}" -m "${MESSAGE}"
@@ -26,7 +26,7 @@ git tag -fa "${MAJOR}" -m "${MESSAGE}"
 
 # Set up remote url for checkout@v1 action.
 if [ -n "${INPUT_GITHUB_TOKEN}" ]; then
-  git remote set-url origin "https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+  git remote set-url origin "https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
 fi
 
 # Push
