@@ -1,4 +1,4 @@
-name: 'Update major/minor semver'
+name: 'Update major/minor semver with ghe'
 description: 'Updates major/minor release tags on a tag push'
 author: 'haya14busa'
 inputs:
