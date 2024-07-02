@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: weom/action-update-semver@v1.0.3
+      - uses: weom/action-update-semver@v1.0.4
         with:
           ghe_repo: <ghe url>
           major_version_tag_only: true  # (optional, default is "false")
@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: weom/action-update-semver@v1.0.3
+      - uses: weom/action-update-semver@v1.0.4
         with:
           github_token: \${{ secrets.github_token }}
 EOF
