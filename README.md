@@ -77,3 +77,6 @@ EOF
 ```
 
 </details>
+
+### Acknowledgment
+This action is based on [@haya14busa's update-major-minor-semver](https://github.com/haya14busa/action-update-semver).
