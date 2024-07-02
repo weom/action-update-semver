@@ -12,6 +12,10 @@ It works well for GitHub Action. ref: https://help.github.com/en/articles/about-
 
 ## Inputs
 
+### `ghe_repo`
+
+To specify your github enterprise url.
+
 ### `tag`
 
 **Optional**. Existing tag to update from. Default comes from `$GITHUB_REF`.
@@ -70,8 +74,8 @@ jobs:
   update-semver:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: haya14busa/action-update-semver@v1
+      - uses: actions/checkout@v4
+      - uses: weom/action-update-semver@v1.0.3
         with:
           github_token: \${{ secrets.github_token }}
 EOF
