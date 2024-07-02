@@ -8,7 +8,7 @@ TAG="${INPUT_TAG:-${GITHUB_REF#refs/tags/}}" # v1.2.3
 MINOR="${TAG%.*}"                            # v1.2
 MAJOR="${MINOR%.*}"                          # v1
 MAJOR_VERSION_TAG_ONLY=${INPUT_MAJOR_VERSION_TAG_ONLY:-}
-GHE_REPO==${INPUT_GHE_REPO:-}
+GHE_REPO=${INPUT_GHE_REPO:-}
 
 if [ "${GITHUB_REF}" = "${TAG}" ]; then
   echo "This workflow is not triggered by tag push: GITHUB_REF=${GITHUB_REF}"
