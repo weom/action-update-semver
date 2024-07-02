@@ -1,4 +1,4 @@
-# GitHub Action: Update major/minor semver
+# GitHub Action: Update major/minor semver for GHE
 
 [![Docker Image CI](https://github.com/haya14busa/action-update-semver/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/haya14busa/action-update-semver/actions)
 [![reviewdog](https://github.com/haya14busa/action-update-semver/workflows/reviewdog/badge.svg)](https://github.com/haya14busa/action-update-semver/actions?query=workflow%3Areviewdog)
